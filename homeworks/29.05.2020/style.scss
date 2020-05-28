@@ -1,0 +1,122 @@
+$grey: #50545d;
+
+@mixin flexible () {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #f6f6f6;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-size: 18px;
+}
+
+.container {
+  max-width: 1140px;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #e2e2e2;
+  height: max-content;
+
+  .container {
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+
+    .row {
+      background-color: $grey;
+      align-items: center;
+      padding: 30px;
+    }
+  }
+
+  h1 {
+    color: white;
+  }
+
+  span {
+    color: white;
+    text-align: right;
+  }
+}
+
+.row {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1140px;
+}
+
+
+article {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  height: max-content;
+
+  .container {
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    background-color: white;
+
+    .row {
+      background-color: white;
+      align-items: center;
+    }
+  }
+
+  h1 {
+    text-transform: uppercase;
+    color: $grey;
+    font-size: 40px;
+    padding: 0 30px;
+    margin: 0;
+  }
+
+  p {
+    padding: 0 30px;
+  }
+}
+
+.work-image {
+  padding: 30px;
+
+  img {
+    width: 100%;
+  }
+}
+
