@@ -1,13 +1,5 @@
 $grey: #50545d;
 
-@mixin flexible () {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-}
-
 body {
   font-family: 'Ubuntu', sans-serif;
   background-color: #f6f6f6;
@@ -18,6 +10,7 @@ body {
 html, body {
   height: 100%;
 }
+
 body {
   margin: 0;
   font-size: 18px;
