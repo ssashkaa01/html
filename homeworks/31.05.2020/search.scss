@@ -1,0 +1,49 @@
+@mixin img {
+  width: 25px;
+  height: 25px;
+}
+
+
+.search-block {
+  width: 400px;
+  padding: 40px;
+
+  input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    width: 420px;
+    background: #fff;
+    position: absolute;
+    max-height: 130px;
+    overflow-y: auto;
+    border: 0;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.2);
+    list-style-type: none;
+    z-index: 9999;
+
+    li {
+      padding: 15px;
+      font-size: 15px;
+      display: flex;
+
+      img {
+        @include img();
+      }
+
+      span {
+        margin: 5px 20px;
+      }
+
+      &:hover {
+        background-color: #f6f6f6;
+      }
+    }
+
+  }
+}

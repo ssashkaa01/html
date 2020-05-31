@@ -1,0 +1,19 @@
+@import "search.scss";
+
+$grey: #50545d;
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #f6f6f6;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-size: 18px;
+}
