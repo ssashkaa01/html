@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+$background-image: url('https://images.ctfassets.net/2j65dwz7bf88/Sr7tHUI7ScQrvBbyfn2TO/a8bc848b538d00e369605fb64818bc39/mike-kenneally-TD4DBagg2wE-unsplash__1___1_.jpg');
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: $background-image;
+  background-size: cover;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+
+  > .container {
+    width: 1200px;
+  }
+}
+
+.container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  //border: 1px solid blue;
+}
+
+.col-3 {
+  width: 25%;
+  max-width: 25%;
+  display: inline-block;
+}
+
+.col-5 {
+  width: 50%;
+  max-width: 50%;
+  display: inline-block;
+}
+
+.col-9 {
+  width: 75%;
+  max-width: 75%;
+  display: inline-block;
+}
+
+.col-12 {
+  width: 100%;
+  max-width: 100%;
+  display: inline-block;
+}
+
+.logo {
+
+  img {
+    width: -webkit-fill-available;
+    max-width: 100%;
+    padding: 1rem;
+  }
+}
+
+.title {
+  color: white;
+
+  h1 {
+    margin-bottom: .2rem;
+    font-size: 2.5rem;
+  }
+
+  span {
+    font-family: 'Bad Script', cursive;
+    font-style: italic;
+    font-size: 1.5rem;
+  }
+}
+
+.button {
+  text-transform: uppercase;
+  color: white;
+  border: 3px solid white;
+  padding: .5rem 1rem;
+  border-radius: 10px;
+  text-decoration: none;
+  margin: 1rem;
+  font-weight: bold;
+  font-size: 1.4rem;
+
+  &:hover {
+    border-color: black;
+    background-color: rgba(black, .6);
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+.ads {
+  color: tomato;
+  font-size: 2rem;
+}
+.content {
+  background-color: white;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+
+  .header {
+
+    h2 {
+      color: black;
+    }
+
+    img {
+      width: -webkit-fill-available;
+      max-width: 100%;
+      padding: .5rem;
+    }
+
+    span {
+      font-family: 'Bad Script', cursive;
+      font-style: italic;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.footer {
+  padding: 1rem;
+  color: white;
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 1200px)  {
+}
+
+@media screen and (max-width: 1200px)  {
+
+  body {
+    > .container {
+      width: 100%;
+    }
+  }
+
+  .button {
+    font-size: 2.5rem;
+  }
+
+  .footer {
+    font-size: 1.5rem;
+  }
+
+  .title {
+  text-align: center;
+    h1 {
+      margin-bottom: .2rem;
+      font-size: 3.5rem;
+    }
+
+    span {
+      font-family: 'Bad Script', cursive;
+      font-style: italic;
+      font-size: 3.5rem;
+    }
+  }
+
+  .col-3,
+  .col-5,
+  .col-9,
+  .col-12 {
+    width: 100%;
+    max-width: 100%;
+    display: inline-block;
+  }
+}
+
+.logo img{
+  height: 150px;
+  width: auto;
+}
