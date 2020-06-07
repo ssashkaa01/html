@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Профіль</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="row m-3">
+            <div class="col-3">
+                <img src="https://img.favpng.com/25/1/17/avatar-user-computer-icons-software-developer-png-favpng-7SbFpNeqKqhhTrrrnHFUqk6U4.jpg" alt="..." class="img-thumbnail w-100">
+                <table class="table table-striped mt-3 text-center">
+                    <tbody>
+                    <tr>
+                        <td>ПІБ</td>
+                        <td><strong>Користувач А. Ю.</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Баланс</td>
+                        <td>12023 UAH</td>
+                    </tr>
+                    <tr>
+                        <td>Місто</td>
+                        <td>Рівне</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-9">
+
+                <h1>
+                    Замовлення
+                </h1>
+
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Товар</th>
+                        <th scope="col">Дата</th>
+                        <th scope="col">Сума</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Самсунг</td>
+                        <td>Сьогодні</td>
+                        <td>3000 UAH</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>LG</td>
+                        <td>12/09/2019</td>
+                        <td>9000 UAH</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Lenovo</td>
+                        <td>22/04/2019</td>
+                        <td>7899 UAH</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="col-md-12 mb-2">
+                <div class="row gallery popup_gallery">
+                    <div class="col-4 col-md-2 p-0">
+                        <a href="https://mir-saun.storym.pro/saunas_images/1/0f3133d76ab5161454a466396c007aab7f702c2b45d7afb6f1/big.jpg">
+                            <img src="https://mir-saun.storym.pro/saunas_images/1/0f3133d76ab5161454a466396c007aab7f702c2b45d7afb6f1/medium.jpg">
+                        </a>
+                    </div>
+                    <div class="col-4 col-md-2 p-0">
+                        <a href="https://mir-saun.storym.pro/saunas_images/1/e26e5314eaa6201f631939b4db61b1814882b5408609e3237c/big.jpg">
+                            <img src="https://mir-saun.storym.pro/saunas_images/1/e26e5314eaa6201f631939b4db61b1814882b5408609e3237c/medium.jpg">
+                        </a>
+                    </div>
+                    <div class="col-4 col-md-2 p-0">
+                        <a href="https://mir-saun.storym.pro/saunas_images/1/b77ad454fd64fc28d7f1dce38b8350ed061b89c8e8d0f60768/big.jpg">
+                            <img src="https://mir-saun.storym.pro/saunas_images/1/b77ad454fd64fc28d7f1dce38b8350ed061b89c8e8d0f60768/medium.jpg">
+                        </a>
+                    </div>
+                    <div class="col-4 col-md-2 p-0">
+                        <a href="https://mir-saun.storym.pro/saunas_images/1/b91ce47320de3daff7e6c992d0d9f01291f772871f3a95b4aa/big.jpg">
+                            <img src="https://mir-saun.storym.pro/saunas_images/1/b91ce47320de3daff7e6c992d0d9f01291f772871f3a95b4aa/medium.jpg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="popup.min.js"></script>
+
+<script>
+
+    $(".popup_gallery").magnificPopup({
+        delegate: "a",
+        type: "image",
+        mainClass: "mfp-with-zoom mfp-img-mobile",
+        fixedContentPos: true,
+        gallery: {
+            enabled: true
+        },
+        zoom: {
+            enabled: true,
+            duration: 300 // don't foget to change the duration also in CSS
+        },
+    });
+</script>
+</body>
+</html>
