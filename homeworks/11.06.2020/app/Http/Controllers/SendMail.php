@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Mail;
 
 class SendMail extends Controller
 {
-    public function Index()
+    public function Index(Request $request)
     {
         $goods = [
             [
@@ -40,9 +40,13 @@ class SendMail extends Controller
 
         try
         {
-            //Mail::send('emails.reset_password', ['reset_url' => route('auth.reset.password.hash', ['hash' => $hash])], function ($message) use ($request){
-            //    $message->to($request->email)->subject(trans('action.reset_password'));
-            //});
+            Mail::send('emails.mail', [
+                'goods' => $goods,
+                'sum' => $sum,
+                'logo' => 'https://www.seekpng.com/png/full/358-3589729_top-shopify-store-hack-shopify-logo-transparent-background.png'
+            ], function ($message) use ($request){
+                $message->to($request->email)->subject('тест');
+            });
 
         }
         catch (\Exception $exception)
