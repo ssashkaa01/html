@@ -48,10 +48,13 @@ class SendMail extends Controller
                 $message->to($request->email)->subject('тест');
             });
 
+            return 'ВІДПРАВЛЕНО';
+
         }
         catch (\Exception $exception)
         {
-
+            dd($exception);
+            return 'ПОМИЛКА';
         }
 
         return view('emails.mail', [
