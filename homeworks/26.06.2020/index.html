@@ -1,0 +1,160 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>
+        Register
+    </title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <h3 class="mb-5">Реєстрація</h3>
+            <form id="regForm">
+
+                <div class="form-group row">
+                    <label for="name" class="col-sm-2 col-form-label">Ім'я</label>
+                    <div class="col-sm-10">
+                        <input type="text" id="name" class="form-control" placeholder="Ім'я">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="surname" class="col-sm-2 col-form-label">Прізвище</label>
+                    <div class="col-sm-10">
+                        <input type="text" id="surname" class="form-control" placeholder="Прізвище">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="phone" class="col-sm-2 col-form-label">Телефон</label>
+                    <div class="col-sm-10">
+                        <input type="tel" id="phone" class="form-control" placeholder="Телефон">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="country" class="col-sm-2 col-form-label">Країна</label>
+                    <div class="col-sm-10">
+                        <input type="text" id="country" class="form-control" placeholder="Країна">
+                    </div>
+                </div>
+
+                <div id="country-list">
+
+                </div>
+
+                <div class="form-group row text-center">
+                    <div class="col-sm-10 mt-4">
+                        <button type="submit" class="btn btn-primary">Зареєструватись</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <h3 class="mb-5">Ви вказали:</h3>
+            <div class="mt-4">
+                <p>Вас звати: <strong id="block-name"></strong></p>
+                <p>Ваш телефон: <strong id="block-phone"></strong></p>
+                <p>Ваша країна: <strong id="block-country"></strong></p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<script>
+
+    var name1 = document.getElementById('name');
+    var surname = document.getElementById('surname');
+    var phone = document.getElementById('phone');
+    var country = document.getElementById('country');
+
+    var countryList = document.getElementById('country-list');
+    var blockName = document.getElementById('block-name');
+    var blockPhone = document.getElementById('block-phone');
+    var blockCountry = document.getElementById('block-country');
+
+    function UpdateBlockName() {
+        blockName.innerHTML = name1.value + ' ' + surname.value;
+    }
+
+    function UpdateBlockPhone() {
+        blockPhone.innerHTML = phone.value;
+    }
+
+    function UpdateBlockCountry() {
+        blockCountry.innerHTML = country.value;
+    }
+
+    function GetCountries()
+    {
+        var xhr = new XMLHttpRequest();
+
+        xhr.open('GET', 'country.json', false);
+
+        xhr.send();
+
+        if (xhr.status !== 200)
+        {
+           return {};
+        }
+        else
+        {
+            return JSON.parse(xhr.responseText);
+        }
+    }
+
+    function UpdateCountryList(nameCountry)
+    {
+        var countries = GetCountries();
+
+        var ul = document.createElement('ul');
+
+        countries.forEach(function (item) {
+
+            if(item.country.toUpperCase().startsWith(nameCountry.toUpperCase()) && nameCountry.length > 0)
+            {
+                var li = document.createElement('li');
+
+                li.innerText = item.country;
+
+                ul.appendChild(li);
+            }
+        });
+
+        countryList.innerHTML = ul.outerHTML;
+    }
+
+    console.log(GetCountries())
+    GetCountries();
+
+    window.addEventListener('load', function () {
+
+        name1.addEventListener('keyup', function (e) {
+            UpdateBlockName();
+        });
+
+        surname.addEventListener('keyup', function (e) {
+            UpdateBlockName();
+        });
+
+        phone.addEventListener('keyup', function (e) {
+            UpdateBlockPhone();
+        });
+
+        country.addEventListener('keyup', function (e) {
+            UpdateBlockCountry();
+            UpdateCountryList(country.value);
+        });
+
+    });
+
+</script>
+</body>
+</html>
