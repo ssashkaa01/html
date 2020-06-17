@@ -1,0 +1,63 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>
+        Register
+    </title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="row" id="images">
+
+    </div>
+
+</div>
+
+
+<script>
+
+    var imagesBlock = document.getElementById('images');
+
+    function GetImages()
+    {
+        var xhr = new XMLHttpRequest();
+
+        xhr.open('GET', 'images.json', false);
+
+        xhr.send();
+
+        if (xhr.status !== 200)
+        {
+           return {};
+        }
+        else
+        {
+            return JSON.parse(xhr.responseText);
+        }
+    }
+
+    var images = GetImages();
+
+    var html = '';
+
+
+    images.forEach(function (item) {
+
+        html += `<div class="card col-md-3">
+            <img class="card-img-top" src="${item.url}" alt="${item.title}">
+            <div class="card-body">
+                <p class="card-text">${item.title}</p>
+            </div>
+        </div>`;
+
+    });
+
+    imagesBlock.innerHTML = html;
+
+</script>
+</body>
+</html>
