@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Профіль</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="row m-3 product">
+            <div class="col-6">
+
+                <div class="wrapper-product">
+                    <div class="col-img">
+
+                        <div class="left-panel">
+                            <div class="one-min" id="images">
+                                <div class="col-v">
+                                    <a href="#" class="active">
+                                        <img src="https://intertop.ua/load/ZW6423/200x267/MAIN.jpg" alt="фото">
+                                    </a>
+                                </div>
+                                <div class="col-v">
+                                    <a href="#">
+                                        <img src="https://intertop.ua/load/ZW6423/200x267/2.jpg" alt="фото">
+                                    </a>
+                                </div>
+                                <div class="col-v" >
+                                    <a href="#">
+                                        <img src="https://intertop.ua/load/ZW6423/200x267/3.jpg" alt="фото">
+                                    </a>
+                                </div>
+                                <div class="col-v">
+                                    <a href="#">
+                                        <img src="https://intertop.ua/load/ZW6423/200x267/2.jpg" alt="фото">
+                                    </a>
+                                </div>
+                                <div class="col-v">
+                                    <a href="#">
+                                        <img src="https://intertop.ua/load/ZW6423/200x267/3.jpg" alt="фото">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="rignt-panel">
+                            <div class="content">
+                                <div class="img-info">
+                                    <span class=info> -30%</span>
+                                    <img src=" https://intertop.ua/load/ZW6423/MAIN.jpg" alt="велике фото" id="image">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 description">
+
+                <h1 class="title">
+                    Кросівки жіночі ECCO
+                </h1>
+                <p>Артикул: 1234567</p>
+
+
+                <div class="color">
+                    <p class="mt-4">Колір <strong>Білий</strong></p>
+                    <a href="#" class="mr-3">
+                        <span class="active">
+                            <img src="https://intertop.ua/load/ZW6423/200x267/MAIN.jpg">
+                        </span>
+                    </a>
+                    <a href="#" class="mr-3">
+                        <span>
+                            <img src="https://intertop.ua/load/OM3159/200x267/MAIN.jpg">
+                        </span>
+                    </a>
+                </div>
+
+                <div class="size">
+                    <p class="mt-4 mb-2"><strong>Розмір</strong></p>
+
+                    <button type="button" class="btn btn-outline-success">40</button>
+                    <button type="button" class="btn btn-outline-success">41</button>
+                    <button type="button" class="btn btn-outline-success">41.5</button>
+                    <button type="button" class="btn btn-outline-success">42</button>
+                    <button type="button" class="btn btn-success">43</button>
+                    <button type="button" class="btn btn-outline-success">44</button>
+                    <button type="button" class="btn btn-outline-success">45</button>
+                </div>
+
+                <div class="price">
+                    <span class="old-price">1100 грн</span>
+                    <span class="new-price">2999 грн</span>
+                    <button type="button" class="btn btn-success">Купити</button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+    <script>
+
+        var images = document.getElementById('images');
+        var image = document.getElementById('image');
+
+        images.querySelectorAll('a').forEach(function (item) {
+
+            item.addEventListener('click', function (e) {
+
+                var active = images.querySelector('a[class=active]');
+
+                active.classList.remove('active');
+
+                e.target.closest('a').classList.add('active');
+
+                image.src = e.target.getAttribute('src');
+
+                if(e.target.getAttribute('src') === null)
+                {
+                    image.src = e.target.querySelector('img').getAttribute('src');
+                }
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>
