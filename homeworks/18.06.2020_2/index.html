@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Профіль</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="row m-3">
+            <div class="col-md-12 form-inline">
+                <div class="form-group mb-2">
+                    <label>Введіть вираз, який необхідно порахувати:</label>
+                </div>
+                <div class="form-group mx-sm-5 mb-2">
+                    <input type="text" class="form-control" id="calc" placeholder="Відповідь">
+                </div>
+                <button id="submit" class="btn btn-primary mb-2">Порахувати</button>
+            </div>
+            <div class="col-md-12">
+                Відповідь: <span id="answer"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+    <script>
+
+        var answer = document.getElementById('answer');
+        var calc = document.getElementById('calc');
+        var submit = document.getElementById('submit');
+
+        submit.addEventListener('click', function (e) {
+
+            var str = calc.value.replace(/[^-()\d/*+.]/g, '');
+            answer.innerText = eval(str);
+        });
+
+    </script>
+
+</body>
+</html>
