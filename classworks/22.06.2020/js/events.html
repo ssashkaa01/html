@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шрот запчастин</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/node_modules/font-awesome/css/font-awesome.min.css">
+    <script src="js/helpLoader.js"></script>
+</head>
+
+<body>
+    <script>
+        loadHtml("navbar.html");
+    </script>
+
+    <div class="container">
+
+        <h1>Події</h1>
+        <a href="#" id="mybtn">
+            <img src="https://cdn.riastatic.com/photosnew/auto/photo/chevrolet_camaro__317149309f.jpg"
+                alt="Alternate Text" width="300" />
+            <img src="https://cdn.riastatic.com/photosnew/auto/photo/mini_cooper__329362548f.jpg" alt="Alternate Text"
+                width="300" />
+        </a>
+
+
+        <div class="row">
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                        placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
+        </div>
+
+
+    </div>
+
+    <!-- Button trigger modal -->
+    <!--<button type="button" class="btn btn-primary" data-toggle="modal" 
+            data-target="#showImageModal">
+        Launch demo modal
+    </button>-->
+
+    <!-- Modal -->
+    <div class="modal fade" id="showImageModal" tabindex="-1" role="dialog" a ria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="contentModalShowImage">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+
+        let loginForm = document.getElementById("loginForm");
+
+        loginForm.addEventListener("success", function (e) {
+            console.log("success", e.detail);
+        });
+
+
+        let email = document.getElementById("email");
+        email.addEventListener("change", function () {
+
+            console.log("inputchange");
+        });
+
+        email.addEventListener("focus", function () {
+            console.log("focus");
+            //email.style = "background: #ccc;";
+        });
+
+        email.addEventListener("blur", function () {
+            console.log("blur");
+            //email.style = "background: #fff;";
+        });
+
+        email.addEventListener("keyup", function (e) {
+            if (e.target.value != "admin") {
+                email.classList.remove("is-valid");
+                email.classList.add("is-invalid");
+            }
+            else {
+                email.classList.remove("is-invalid");
+                email.classList.add("is-valid");
+                
+                loginForm.dispatchEvent(new CustomEvent('success', {
+                                    //bubbles: true,
+                                    detail: {
+                                        name: 'ivan'
+                                    }
+                }));
+            }
+            console.log(e.target.value);
+        });
+
+
+
+
+    </script>
+
+
+
+    <script>
+        window.addEventListener('load', function () {
+            console.log("Hello my friends");
+            let mybtn = document.getElementById("mybtn");
+            mybtn.addEventListener("click", function (e) {
+                e.preventDefault();
+                document.getElementById("contentModalShowImage")
+                    .innerHTML = e.target.outerHTML;
+                $('#showImageModal').modal('show');
+                console.log("Ви нажали на ", e.target);
+                console.log("Hello");
+            });
+        });
+
+        //window.onload = function () {
+        //    console.log("Hello onload one");
+        //}
+    </script>
+
+    <script>
+        //window.addEventListener('load', function () {
+        //    console.log("Hello my friends two");
+
+        //    let mybtn = document.getElementById("mybtn");
+        //    mybtn.addEventListener("click", function (e) {
+        //        e.preventDefault();
+        //        console.log("Hello 1");
+        //    });
+        //});
+
+
+
+
+                    //window.onload = function () {
+                    //    console.log("Hello onload two");
+                    //}
+    </script>
+</body>
+
+</html>

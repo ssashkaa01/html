@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шрот запчастин</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/node_modules/font-awesome/css/font-awesome.min.css">
+
+    <script src="js/helpLoader.js"></script>
+</head>
+
+<body>
+    <script>
+        loadHtml("navbar.html");
+    </script>
+
+    <div class="container">
+        <h1>Працюємо із promis</h1>
+        
+
+    </div>
+
+
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        window.addEventListener("load", function () {
+
+            //testProblem();
+            //testPromisNoproblem();
+            testAjaxPromis();
+            function calc() {
+
+                //for (var i = 0; i < 10000000000; i++) {
+                //    let a = i * 2;
+                //}
+                return "ok";
+            }
+            function testProblem() {
+                var d = Date(Date.now());
+                a = d.toString()
+                console.log("calc begin", a);
+                calc();
+                //Тут код не працює
+                //Поки функція не завершить свою роботу
+                console.log("!!!!!Робота!!!!!!!",
+                    "Пройшовши такий час, уже немає потреби");
+                var e = Date(Date.now());
+                a = e.toString()
+                console.log("calc end", a);
+            }
+            function testPromisNoproblem() {
+                var work = new Promise(function (resolve, reject) {
+                // Працює якась робота
+                //let res = calc();
+                    setTimeout(function() {
+                        // переведёт промис в состояние fulfilled с результатом "result"
+                        resolve("усе ок");
+                        //reject("Щось пішло не так");
+                    }, 2000);
+
+                // В ней можно делать любые асинхронные операции,
+                // А когда они завершатся — нужно вызвать одно из:
+                // resolve(результат) при успешном выполнении
+                // reject(ошибка) при ошибке
+                    
+                });
+                work.then(
+                    function(result) {
+                        console.log("Проміс завершив роботу із успіхом", result);
+                    },
+                    function(error) {
+                        console.log("В ході роботи проміса ми отримали овал", error);
+                    }
+                );
+
+
+                console.log("А ми працюємо далі ...");
+            }
+
+            function testAjaxPromis() {
+                //let url = "parts1.json";
+                let url = "http://localhost:59389/api/users/search";
+                var promGetUsers = new Promise(function (resolve, reject) {
+                    var xhr = new XMLHttpRequest();
+                    xhr.open('GET', url, false);
+                    xhr.send(); // (1)
+                    //xhr.onreadystatechange = function () { // (3)
+                    //    if (xhr.readyState != 4) return;
+
+                        if (xhr.status != 200) {
+                            reject("Хюстон у на спроблеми");
+                            //alert(xhr.status + ': ' + xhr.statusText);
+                        } else {
+                            resolve(JSON.parse(xhr.responseText));
+                            //alert(xhr.responseText);
+                        }
+
+                   // }
+                });
+                promGetUsers
+                    .then(
+                        function (users) {
+                            console.log("усе ок", users);
+                        },
+                        function (problem) {
+                            console.log("проблема", problem);
+                        });
+
+                console.log("Має бути результат");
+            }
+
+        });
+    </script>
+
+    
+</body>
+
+</html>

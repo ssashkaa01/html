@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шрот запчастин</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/node_modules/font-awesome/css/font-awesome.min.css">
+
+    <script src="js/helpLoader.js"></script>
+</head>
+
+<body>
+    <script>
+        loadHtml("navbar.html");
+    </script>
+
+    <div class="container">
+        <h1>Працюємо із json</h1>
+        <a href="#" class="btn btn-success" id="getGirls">
+            Отримати список дівчат
+        </a>
+        <div id="content">
+
+        </div>
+        <br />
+        <div class="row">
+            <div col="12">
+                <a href="#" class="btn btn-success" id="getParts">
+                    Отримати список запчастин
+                </a>
+
+                <div id="content-parts">
+
+                </div>
+            </div>
+
+        </div>
+
+        <br />
+        <div class="row">
+            <div col="12">
+                <a href="#" class="btn btn-success" id="getParts">
+                    Перебрати елементи
+                </a>
+
+                <div id="foreach-content">
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    
+    <script>
+        window.addEventListener("load", function () {
+            let btnGetGirls = document.getElementById("getGirls");
+            let $content = $("#content");
+
+            btnGetGirls.addEventListener("click", function (e) {
+                e.preventDefault();
+                getGirls();
+            });
+
+            function getGirls() {
+                // 1. Создаём новый объект XMLHttpRequest
+                var xhr = new XMLHttpRequest();
+                //console.log("Date.now()", Date.now());
+                // 2. Конфигурируем его: GET-запрос на URL 'girls.json'
+                xhr.open('GET', `girls.json?t=${Date.now()}`, false);
+
+                // 3. Отсылаем запрос
+                xhr.send();
+
+                // 4. Если код ответа сервера не 200, то это ошибка
+                if (xhr.status != 200) {
+                    // обработать ошибку
+                    console.log(xhr.status + ': ' + xhr.statusText); // пример вывода: 404: Not Found
+                } else {
+                    let result = xhr.responseText;
+                    let mas = JSON.parse(result);
+                    var ul = document.createElement('ul');
+                    for (let i = 0; i < mas.length; i++) {
+                        //console.log(mas[i]);
+                        var li = document.createElement('li');
+                        li.innerHTML = mas[i];
+                        ul.appendChild(li);
+                    }
+                    $content.html(ul.outerHTML);
+                    // вывести результат
+                    console.log(result); // responseText -- текст ответа.
+                }
+            }
+        });
+    </script>
+
+    <script>
+        window.addEventListener("load", function () {
+            // 1. Создаём новый объект XMLHttpRequest
+            var xhr = new XMLHttpRequest();
+            //console.log("Date.now()", Date.now());
+            // 2. Конфигурируем его: GET-запрос на URL 'girls.json'
+            xhr.open('GET', `parts.json?t=${Date.now()}`, false);
+
+            // 3. Отсылаем запрос
+            xhr.send();
+
+            // 4. Если код ответа сервера не 200, то это ошибка
+            if (xhr.status != 200) {
+                // обработать ошибку
+                console.log(xhr.status + ': ' + xhr.statusText); // пример вывода: 404: Not Found
+            } else {
+                let result = xhr.responseText;
+                let mas = JSON.parse(result);
+                console.log('one element', mas[0].title);
+                // вывести результат
+                console.log(result); // responseText -- текст ответа.
+            }
+        });
+    </script>
+
+    <script>
+        window.addEventListener("load", function () {
+            //console.log("Foreach");
+            let mas = [23, 45, 21, 34];
+            console.log("----Foreach лямда----");
+            mas.forEach(item => {
+                console.log("mas: ", item);
+            });
+
+            console.log("----Foreach function----");
+            mas.forEach(function(item) {
+                console.log("mas: ", item);
+            }); 
+
+            let contenForeach = document.getElementById("foreach-content");
+
+            let result = mas.map(function (item) {
+                return `<li>${item}</li>`;
+                //console.log("mas: ", item);
+            });
+
+            console.log("map", result);
+            contenForeach.innerHTML = result;
+
+        });
+    </script>
+</body>
+
+</html>

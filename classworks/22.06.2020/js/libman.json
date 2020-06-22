@@ -1,0 +1,75 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "jquery@3.5.1",
+      "destination": "lib/jquery/",
+      "files": [
+        "jquery.min.js"
+      ]
+    },
+    {
+      "provider": "unpkg",
+      "library": "cropperjs@1.5.7",
+      "destination": "lib/cropperjs/",
+      "files": [
+        "dist/cropper.min.css",
+        "dist/cropper.min.js"
+      ]
+    },
+    {
+      "provider": "unpkg",
+      "library": "@fortawesome/fontawesome-free@5.13.1",
+      "destination": "lib/fortawesome/fontawesome-free/",
+      "files": [
+        "css/all.css",
+        "css/all.min.css",
+        "css/brands.css",
+        "css/brands.min.css",
+        "css/fontawesome.css",
+        "css/fontawesome.min.css",
+        "css/regular.css",
+        "css/regular.min.css",
+        "css/solid.css",
+        "css/solid.min.css",
+        "css/svg-with-js.css",
+        "css/svg-with-js.min.css",
+        "css/v4-shims.css",
+        "css/v4-shims.min.css",
+        "webfonts/fa-brands-400.eot",
+        "webfonts/fa-brands-400.svg",
+        "webfonts/fa-brands-400.ttf",
+        "webfonts/fa-brands-400.woff",
+        "webfonts/fa-brands-400.woff2",
+        "webfonts/fa-regular-400.eot",
+        "webfonts/fa-regular-400.svg",
+        "webfonts/fa-regular-400.ttf",
+        "webfonts/fa-regular-400.woff",
+        "webfonts/fa-regular-400.woff2",
+        "webfonts/fa-solid-900.eot",
+        "webfonts/fa-solid-900.svg",
+        "webfonts/fa-solid-900.ttf",
+        "webfonts/fa-solid-900.woff",
+        "webfonts/fa-solid-900.woff2"
+      ]
+    },
+    {
+      "provider": "unpkg",
+      "library": "bootstrap@4.5.0",
+      "destination": "lib/bootstrap/",
+      "files": [
+        "dist/css/bootstrap.min.css",
+        "dist/js/bootstrap.min.js"
+      ]
+    },
+    {
+      "provider": "unpkg",
+      "library": "popper.js@1.16.1",
+      "destination": "lib/popper.js/",
+      "files": [
+        "dist/popper.min.js"
+      ]
+    }
+  ]
+}

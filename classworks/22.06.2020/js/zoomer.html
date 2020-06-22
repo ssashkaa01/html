@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Test zoomer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/node_modules/font-awesome/css/font-awesome.min.css">
+
+    <link href="css/olexand.min.css" rel="stylesheet" />
+    <!--<script src="https://unpkg.com/js-image-zoom@0.4.1/js-image-zoom.js" type="application/javascript"></script>-->
+    <!--<link href="css/zoomer.css" rel="stylesheet" />
+    <script src="js/zoomer.js"></script>-->
+    <script src="js/helpLoader.js"></script>
+    <style>
+        .js-image-zoom__zoomed-image {
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        loadHtml("navbar.html");
+    </script>
+
+    <div class="container">
+        <div class="row">
+            <button class="btn btn-warning" id="chageImage">Змінити фото</button>
+        </div>
+        <div class="row m-3 product">
+
+            <div class="col-md-6">
+                <div class="wrapper-product">
+                    <div class="col-img">
+
+                        <div class="left-panel">
+                            <ul class="one-min" id="images_small">
+                                <li class="col-v">
+                                    <a href="https://intertop.ua/load/BR1651/1600x2133/MAIN.jpg" class="active">
+                                        <img src="https://intertop.ua/load/BR1651/200x267/MAIN.jpg" alt="фото">
+                                    </a>
+                                </li>
+                                <li class="col-v">
+                                    <a href="https://intertop.ua/load/BR1651/1600x2133/1.jpg">
+                                        <img src="https://intertop.ua/load/BR1651/200x267/1.jpg" alt="фото">
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div class="rignt-panel">
+                            <div class="content">
+                                <div class="img-info">
+                                    <span class=info> -30%</span>
+                                    <div id="img-container" style="width:300px">
+
+                                    </div>
+                                    <!--<img src=" https://intertop.ua/load/ZW6423/MAIN.jpg" alt="велике фото">-->
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 description">
+
+                <h1 class="title">
+                    Кросівки жіночі ECCO
+                </h1>
+                <p>Артикул: 1234567</p>
+
+
+                <div class="color">
+                    <p class="mt-4">Колір <strong>Білий</strong></p>
+                    <a href="#" class="mr-3">
+                        <span class="active">
+                            <img src="https://intertop.ua/load/ZW6423/200x267/MAIN.jpg">
+                        </span>
+                    </a>
+                    <a href="#" class="mr-3">
+                        <span>
+                            <img src="https://intertop.ua/load/OM3159/200x267/MAIN.jpg">
+                        </span>
+                    </a>
+                </div>
+
+                <div class="size">
+                    <p class="mt-4 mb-2"><strong>Розмір</strong></p>
+
+                    <button type="button" class="btn btn-outline-success">40</button>
+                    <button type="button" class="btn btn-outline-success">41</button>
+                    <button type="button" class="btn btn-outline-success">41.5</button>
+                    <button type="button" class="btn btn-outline-success">42</button>
+                    <button type="button" class="btn btn-success">43</button>
+                    <button type="button" class="btn btn-outline-success">44</button>
+                    <button type="button" class="btn btn-outline-success">45</button>
+                </div>
+
+                <div class="price">
+                    <span class="old-price">1100 грн</span>
+                    <span class="new-price">2999 грн</span>
+                    <button type="button" class="btn btn-success">Купити</button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src="/node_modules/js-image-zoom/js-image-zoom.js"></script>
+
+    <script>
+        var options = {
+            width: 300,
+            zoomWidth: 400,
+            img: "https://intertop.ua/load/BR1651/1600x2133/MAIN.jpg",
+            offset: { vertical: 0, horizontal: 10 },
+            zoomPosition: "Default"//Default, left, right, top, bottom, original
+        };
+        window.imageZoom =
+            new ImageZoom(document.getElementById("img-container"), options);
+
+        window.onload = function () {
+
+            let images_small = document.getElementById("images_small");
+            images_small.querySelectorAll("a")
+                .forEach(function (item) {
+                    item.onclick = function (e) {
+                        e.preventDefault();
+                        options.img = this.href;
+                        window.imageZoom.kill();
+                        window.imageZoom = new ImageZoom(document.getElementById("img-container"), options);
+                        //console.log("a", this);
+                    }
+
+                });
+
+            //for (var i = 0; i < ima; i++) {
+
+            //}
+
+
+            let btnChageImage = document.getElementById("chageImage");
+            btnChageImage.onclick = function () {
+                console.log("Hello click btn");
+                options.img = "https://www.primefaces.org/wp-content/uploads/2018/01/primereact-140.jpg";
+                window.imageZoom.kill();
+                window.imageZoom = new ImageZoom(document.getElementById("img-container"), options);
+            };
+        }
+    </script>
+</body>
+</html>

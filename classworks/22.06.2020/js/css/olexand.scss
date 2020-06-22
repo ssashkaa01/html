@@ -1,0 +1,192 @@
+﻿body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #f6f6f6;
+}
+
+$green: #00b894;
+
+.wrapper-product {
+    display: flex;
+    justify-content: center;
+
+    .col-img {
+        display: flex;
+
+        > div {
+            width: 100%;
+        }
+
+        .left-panel {
+            width: 30%;
+
+            .one-min {
+                margin-top: 10px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                list-style: none;
+                margin: 0;
+
+                > .col-v {
+                    width: 100px;
+                    margin: 10px;
+                    text-align: center;
+                    line-height: 75px;
+                    font-size: 30px;
+                    position: relative;
+
+
+                    a {
+                        margin-left: 15px;
+                        display: table-cell;
+
+                        &.active {
+                            color: $green;
+                            border-bottom: solid;
+                        }
+                    }
+
+                    img {
+                        margin: 10px;
+                        //vertical-align: bottom;
+                        border-style: none;
+                        max-width: 100%;
+                        height: auto;
+                        width: 80%;
+                    }
+                }
+            }
+        }
+
+        .rignt-panel {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .content {
+                .img-info {
+                    align-self: center;
+                    padding: 20px;
+                    position: relative;
+
+                    .info {
+                        position: absolute;
+                        left: 0;
+                        top: 50px;
+                        color: white;
+                        background-color: #d34546;
+                        padding: 0px 6px;
+                        font-weight: 600;
+
+                        &:before {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            right: -9px;
+                            border-left: 9px solid #d34546;
+                            border-top: 12px solid transparent;
+                            border-bottom: 12px solid transparent;
+                        }
+                    }
+
+                    img {
+                        max-width: 100%;
+                        height: auto;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.product {
+    display: flex;
+    align-items: center;
+}
+
+.description {
+
+    .title {
+        font-weight: 300;
+        font-size: 2rem;
+    }
+
+    .size {
+        margin: 2rem 0;
+    }
+
+
+
+    .btn {
+        border-radius: 0;
+        border-color: $green;
+        color: $green;
+
+
+        &.btn-success,
+        &:hover {
+            background-color: $green;
+            color: white;
+        }
+    }
+
+    .color {
+        span {
+            position: relative;
+            background: #eee;
+            overflow: hidden;
+            display: table-cell;
+            vertical-align: middle;
+            width: 69px;
+            height: 69px;
+            border: 1px solid transparent;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -khtml-border-radius: 50%;
+            border-radius: 50%;
+            -webkit-transition: all .3s ease;
+            -moz-transition: all .3s ease;
+            -o-transition: all .3s ease;
+
+            &.active {
+                border-color: $green;
+            }
+
+            img {
+                max-height: 65px;
+                width: auto;
+                position: absolute;
+                bottom: 25%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+
+    .price {
+        display: flex;
+        align-items: center;
+
+        .old-price {
+            text-decoration: line-through;
+            color: #999;
+        }
+
+        .new-price {
+            font-size: 2rem;
+            color: #d34546;
+        }
+
+        span {
+            margin-right: 1rem;
+        }
+
+        .btn {
+            padding: 6px 34px;
+            text-transform: uppercase;
+        }
+    }
+}

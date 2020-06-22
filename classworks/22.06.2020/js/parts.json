@@ -1,0 +1,15 @@
+[
+  {
+    "id": 1,
+    "title": "Амортизатор",
+    "src": "https://amortizator.net/image/cache/catalog/bilstein/bilstein_22-001856-1200x800.jpg",
+    "price": "290грн.",
+    "producer": "Польща підвал"
+  },
+  {
+    "id": 2,
+    "title": "Колесо",
+    "src": "https://pngimg.com/uploads/car_wheel/car_wheel_PNG23316.png",
+    "price": 1290
+  }
+]

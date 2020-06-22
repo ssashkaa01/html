@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шрот запчастин</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/node_modules/font-awesome/css/font-awesome.min.css">
+
+    <script src="js/helpLoader.js"></script>
+    <script src="/js/main.js"></script>
+</head>
+
+<body>
+    <script>
+        loadHtml("navbar.html");
+    </script>
+
+    <div class="container">
+        <h1>Наші запчастини</h1>
+
+        <button id="btnClickMe" class="btn btn-danger">
+            Нажми мене
+        </button>
+
+    </div>
+
+
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        //window.onload = function () {}
+        $(function () {
+            //var btn = document.getElementById("btnClickMe");
+            var btn = $("#btnClickMe");
+            btn.on("click", function () {
+                alert("Hello");
+            });
+        });
+    </script>
+</body>
+
+</html>
