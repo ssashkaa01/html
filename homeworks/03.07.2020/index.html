@@ -1,0 +1,150 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>
+        Images
+    </title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+
+<style>
+    .loader {
+        z-index: 9999;
+        top:0;
+        background: rgba(0,0,0,.6);
+        position: fixed;
+        display: none;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        height: 100%;
+    }
+
+    .loader i {
+        font-size: 100px;
+        color: #fff;
+    }
+</style>
+
+<div class="loader" id="loader">
+    <i class="fa fa-spinner fa-pulse"></i>
+</div>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="btn btn-success mb-3" id="btn">
+                Завантажити
+            </div>
+        </div>
+        <div class="col-md-8">
+            <input class="form-control" id="search">
+        </div>
+    </div>
+    <div class="row" id="images">
+
+    </div>
+
+</div>
+
+
+<script>
+
+    var imagesBlock = document.getElementById('images');
+    var loader = document.getElementById('loader');
+    var btn = document.getElementById('btn');
+    var search = document.getElementById('search');
+
+    function SetLoader(set = true) {
+        if(set === true)
+        {
+            loader.style.display = 'flex';
+        }
+        else {
+            loader.style.display = 'none';
+        }
+    }
+
+    function GetImages()
+    {
+        var xhr = new XMLHttpRequest();
+
+        xhr.open('GET', 'images.json', false);
+
+        xhr.send();
+
+        if (xhr.status !== 200)
+        {
+           return {};
+        }
+        else
+        {
+            return JSON.parse(xhr.responseText);
+        }
+    }
+
+    function UpdateImagesList(nameImage)
+    {
+        SetLoader(true);
+
+        var images = GetImages();
+        var html = '';
+
+        images.forEach(function (item) {
+
+            if(item.title.toUpperCase().startsWith(nameImage.toUpperCase()) && nameImage.length > 0)
+            {
+                html += `<div class="card col-md-3">
+                    <img class="card-img-top" src="${item.url}" alt="${item.title}">
+                    <div class="card-body">
+                        <p class="card-text">${item.title}</p>
+                    </div>
+                </div>`;
+            }
+        });
+
+        imagesBlock.innerHTML = html;
+
+        SetLoader(false);
+    }
+
+    btn.addEventListener('click', function () {
+
+        SetLoader(true);
+        setTimeout(function () {
+
+            var images = GetImages();
+            var html = '';
+
+            images.forEach(function (item) {
+
+                html += `<div class="card col-md-3">
+                    <img class="card-img-top" src="${item.url}" alt="${item.title}">
+                    <div class="card-body">
+                        <p class="card-text">${item.title}</p>
+                    </div>
+                </div>`;
+
+            });
+
+            imagesBlock.innerHTML = html;
+
+            SetLoader(false);
+
+        }, 2000);
+    });
+
+    window.addEventListener('load', function () {
+
+        search.addEventListener('keyup', function (e) {
+            UpdateImagesList(search.value);
+        });
+
+    });
+
+</script>
+</body>
+</html>
