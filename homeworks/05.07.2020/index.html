@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="/homeworks/05.07.2020/wwwroot/lib/bootstrap/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="/homeworks/05.07.2020/wwwroot/css/site.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <!--<script src="/wwwroot/js/site.min.js"></script>-->
+</head>
+<body>
+    <div class="container">
+        <h1>Робота з користувачами</h1>
+        <div>
+            <a href="#" id="getAxiosData" class="btn btn-success">
+                Показати через axios
+            </a>
+        </div>
+        <br />
+        <div>
+            <form class="form-inline mb-4" id="formCreateUser">
+                <div class="form-group">
+                    <label for="email">Пошта:</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="image">Фото:</label>
+                    <input  type="url" class="form-control" id="image" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="role">Роль:</label>
+                    <input  type="text" class="form-control" id="role" required>
+                </div>
+
+                <button type="submit" class="btn btn-warning">Додати</button>
+            </form>
+        </div>
+        <div id="content"></div>
+    </div>
+
+    <script src="/homeworks/05.07.2020/wwwroot/lib/jquery/jquery.min.js"></script>
+    <script src="/homeworks/05.07.2020/wwwroot/lib/popper.js/popper.min.js"></script>
+    <script src="/homeworks/05.07.2020/wwwroot/lib/bootstrap/bootstrap.min.js"></script>
+    <script src="/homeworks/05.07.2020/wwwroot/lib/axios/axios.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+
+    <script>
+        function getUrlUsers() {
+            return "http://localhost:5000/api/users/search";
+        }
+
+        function getContentTableByJSON(data) {
+            let str = `
+                            <table class="table">
+                              <thead>
+                                <tr>
+                                  <th scope="col">Image</th>
+                                  <th scope="col">Email</th>
+                                  <th scope="col">Role</th>
+                                </tr>
+                              </thead>
+                              <tbody>`;
+            data.forEach(function (item) {
+                str += `
+                                    <tr>
+                                      <th>
+                                           <img src="${item.image}" alt="User image" width="150" />
+                                      </th>
+                                      <td>${item.email}</td>
+                                      <td>${item.role}</td>
+                                    </tr>`;
+            });
+            str += `
+                            </tbody>
+                          </table>
+                                    `;
+            return str;
+
+        }
+
+    </script>
+
+    <script>
+        let divContent = document.getElementById("content");
+
+        function LoadList()
+        {
+            let url = getUrlUsers();
+            axios.get(url)
+                .then(
+                    (result) => {
+                        divContent.innerHTML = getContentTableByJSON(result.data);
+                    },
+                    (error) => console.log("error", error)
+                );
+        }
+
+        window.addEventListener("load", function () {
+            let getAxiosData = document.getElementById("getAxiosData");
+
+
+            getAxiosData.addEventListener("click", function (e) {
+                e.preventDefault();
+                LoadList();
+                return false;
+            });
+        });
+    </script>
+
+    <script>
+        window.addEventListener("load", function () {
+            let form = document.getElementById("formCreateUser");
+            form.addEventListener("submit", function (e) {
+                e.preventDefault();
+                let email = document.getElementById("email");
+                let image = document.getElementById("image");
+                let role = document.getElementById("role");
+                axios.post("http://localhost:5000/api/users/create",
+                    {
+                        email: email.value,
+                        image: image.value,
+                        role: role.value
+                    })
+                    .then((responce) =>
+                        {
+                            Toastify({
+                                text: "Добавлене проскочило",
+                                backgroundColor: "green",
+                                className: "success",
+                            }).showToast();
+                            LoadList()
+                        },
+                        (error) => {
+                            Toastify({
+                                text: "Щось пішло не так",
+                                backgroundColor: "red",
+                                className: "error",
+                            }).showToast();
+                        })
+                //alert("Треба зберегти користувача");
+            });
+
+        });
+    </script>
+
+</body>
+</html>
