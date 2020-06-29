@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="wwwroot/lib/bootstrap/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="wwwroot/css/site.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <!--<script src="/wwwroot/js/site.min.js"></script>-->
+</head>
+<body>
+    <div class="container">
+        <h1>Робота з користувачами</h1>
+        <div>
+            <a href="#" id="getAxiosData" class="btn btn-success">
+                Показати через axios
+            </a>
+        </div>
+        <br />
+        <div id="content"></div>
+    </div>
+
+    <script src="wwwroot/lib/jquery/jquery.min.js"></script>
+    <script src="wwwroot/lib/popper.js/popper.min.js"></script>
+    <script src="wwwroot/lib/bootstrap/bootstrap.min.js"></script>
+    <script src="wwwroot/lib/axios/axios.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+
+    <script>
+        function getUrlUsers() {
+            return "users.json";
+        }
+
+        function getContentTableByJSON(data) {
+            let str = `
+                            <table class="table">
+                              <thead>
+                                <tr>
+                                  <th scope="col">Id</th>
+                                  <th scope="col">Name</th>
+                                  <th scope="col">Email</th>
+                                  <th scope="col"></th>
+                                </tr>
+                              </thead>
+                              <tbody>`;
+            data.forEach(function (item) {
+                str += `
+                                    <tr>
+                                      <th>
+                                          ${item.id}
+                                      </th>
+                                      <td>${item.name}</td>
+                                      <td>${item.email}</td>
+                                      <td><a href="#" data-action="delete">Видалити</a></td>
+                                    </tr>`;
+            });
+            str += `
+                            </tbody>
+                          </table>
+                                    `;
+            return str;
+
+        }
+
+    </script>
+
+    <script>
+        let divContent = document.getElementById("content");
+
+        function LoadList()
+        {
+            let url = getUrlUsers();
+            axios.get(url)
+                .then(
+                    (result) => {
+                        divContent.innerHTML = getContentTableByJSON(result.data);
+
+                        divContent.querySelectorAll('a[data-action="delete"]').forEach(function (item) {
+                            item.addEventListener('click', DeleteUser, false);
+                        });
+
+                    },
+                    (error) => console.log("error", error)
+                );
+        }
+
+        window.addEventListener("load", function () {
+            let getAxiosData = document.getElementById("getAxiosData");
+
+
+            getAxiosData.addEventListener("click", function (e) {
+                e.preventDefault();
+                LoadList();
+                return false;
+            });
+        });
+
+        // Видалення користувача
+        function DeleteUser(e)
+        {
+            if(confirm('Видалити користувача?')) {
+                e.target.closest('tr').remove();
+                alert('Користувача видалено');
+            }
+        }
+
+    </script>
+
+</body>
+</html>
