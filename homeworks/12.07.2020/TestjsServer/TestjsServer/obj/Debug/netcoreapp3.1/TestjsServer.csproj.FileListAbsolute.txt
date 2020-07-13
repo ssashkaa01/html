@@ -1,0 +1,182 @@
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 6. json. Ajax\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 6. json. Ajax\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\appsettings.json
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 6. json. Ajax\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 6. json. Ajax\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\TestjsServer.exe
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 6. json. Ajax\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\TestjsServer.deps.json
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 6. json. Ajax\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\TestjsServer.runtimeconfig.json
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 6. json. Ajax\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\TestjsServer.runtimeconfig.dev.json
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 6. json. Ajax\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\TestjsServer.dll
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 6. json. Ajax\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\TestjsServer.pdb
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 6. json. Ajax\TestjsServer\TestjsServer\obj\Debug\netcoreapp3.1\TestjsServer.csprojAssemblyReference.cache
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 6. json. Ajax\TestjsServer\TestjsServer\obj\Debug\netcoreapp3.1\TestjsServer.AssemblyInfoInputs.cache
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 6. json. Ajax\TestjsServer\TestjsServer\obj\Debug\netcoreapp3.1\TestjsServer.AssemblyInfo.cs
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 6. json. Ajax\TestjsServer\TestjsServer\obj\Debug\netcoreapp3.1\TestjsServer.csproj.CoreCompileInputs.cache
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 6. json. Ajax\TestjsServer\TestjsServer\obj\Debug\netcoreapp3.1\TestjsServer.MvcApplicationPartsAssemblyInfo.cache
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 6. json. Ajax\TestjsServer\TestjsServer\obj\Debug\netcoreapp3.1\TestjsServer.RazorTargetAssemblyInfo.cache
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 6. json. Ajax\TestjsServer\TestjsServer\obj\Debug\netcoreapp3.1\staticwebassets\TestjsServer.StaticWebAssets.Manifest.cache
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 6. json. Ajax\TestjsServer\TestjsServer\obj\Debug\netcoreapp3.1\staticwebassets\TestjsServer.StaticWebAssets.xml
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 6. json. Ajax\TestjsServer\TestjsServer\obj\Debug\netcoreapp3.1\TestjsServer.dll
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 6. json. Ajax\TestjsServer\TestjsServer\obj\Debug\netcoreapp3.1\TestjsServer.pdb
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 6. json. Ajax\TestjsServer\TestjsServer\obj\Debug\netcoreapp3.1\TestjsServer.genruntimeconfig.cache
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 9. PostRequestServer\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 9. PostRequestServer\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\appsettings.json
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 9. PostRequestServer\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 9. PostRequestServer\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\TestjsServer.exe
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 9. PostRequestServer\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\TestjsServer.deps.json
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 9. PostRequestServer\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\TestjsServer.runtimeconfig.json
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 9. PostRequestServer\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\TestjsServer.runtimeconfig.dev.json
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 9. PostRequestServer\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\TestjsServer.dll
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 9. PostRequestServer\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\TestjsServer.pdb
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 9. PostRequestServer\TestjsServer\TestjsServer\obj\Debug\netcoreapp3.1\TestjsServer.csprojAssemblyReference.cache
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 9. PostRequestServer\TestjsServer\TestjsServer\obj\Debug\netcoreapp3.1\TestjsServer.AssemblyInfoInputs.cache
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 9. PostRequestServer\TestjsServer\TestjsServer\obj\Debug\netcoreapp3.1\TestjsServer.AssemblyInfo.cs
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 9. PostRequestServer\TestjsServer\TestjsServer\obj\Debug\netcoreapp3.1\TestjsServer.csproj.CoreCompileInputs.cache
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 9. PostRequestServer\TestjsServer\TestjsServer\obj\Debug\netcoreapp3.1\TestjsServer.MvcApplicationPartsAssemblyInfo.cache
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 9. PostRequestServer\TestjsServer\TestjsServer\obj\Debug\netcoreapp3.1\TestjsServer.RazorTargetAssemblyInfo.cache
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 9. PostRequestServer\TestjsServer\TestjsServer\obj\Debug\netcoreapp3.1\staticwebassets\TestjsServer.StaticWebAssets.Manifest.cache
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 9. PostRequestServer\TestjsServer\TestjsServer\obj\Debug\netcoreapp3.1\staticwebassets\TestjsServer.StaticWebAssets.xml
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 9. PostRequestServer\TestjsServer\TestjsServer\obj\Debug\netcoreapp3.1\TestjsServer.dll
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 9. PostRequestServer\TestjsServer\TestjsServer\obj\Debug\netcoreapp3.1\TestjsServer.pdb
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 9. PostRequestServer\TestjsServer\TestjsServer\obj\Debug\netcoreapp3.1\TestjsServer.genruntimeconfig.cache
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 10. CRUD RESAPI\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 10. CRUD RESAPI\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\appsettings.json
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 10. CRUD RESAPI\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 10. CRUD RESAPI\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\TestjsServer.exe
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 10. CRUD RESAPI\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\TestjsServer.deps.json
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 10. CRUD RESAPI\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\TestjsServer.runtimeconfig.json
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 10. CRUD RESAPI\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\TestjsServer.runtimeconfig.dev.json
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 10. CRUD RESAPI\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\TestjsServer.dll
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 10. CRUD RESAPI\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\TestjsServer.pdb
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 10. CRUD RESAPI\TestjsServer\TestjsServer\obj\Debug\netcoreapp3.1\TestjsServer.csprojAssemblyReference.cache
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 10. CRUD RESAPI\TestjsServer\TestjsServer\obj\Debug\netcoreapp3.1\TestjsServer.AssemblyInfoInputs.cache
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 10. CRUD RESAPI\TestjsServer\TestjsServer\obj\Debug\netcoreapp3.1\TestjsServer.AssemblyInfo.cs
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 10. CRUD RESAPI\TestjsServer\TestjsServer\obj\Debug\netcoreapp3.1\TestjsServer.csproj.CoreCompileInputs.cache
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 10. CRUD RESAPI\TestjsServer\TestjsServer\obj\Debug\netcoreapp3.1\TestjsServer.MvcApplicationPartsAssemblyInfo.cache
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 10. CRUD RESAPI\TestjsServer\TestjsServer\obj\Debug\netcoreapp3.1\TestjsServer.RazorTargetAssemblyInfo.cache
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 10. CRUD RESAPI\TestjsServer\TestjsServer\obj\Debug\netcoreapp3.1\staticwebassets\TestjsServer.StaticWebAssets.Manifest.cache
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 10. CRUD RESAPI\TestjsServer\TestjsServer\obj\Debug\netcoreapp3.1\staticwebassets\TestjsServer.StaticWebAssets.xml
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 10. CRUD RESAPI\TestjsServer\TestjsServer\obj\Debug\netcoreapp3.1\TestjsServer.dll
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 10. CRUD RESAPI\TestjsServer\TestjsServer\obj\Debug\netcoreapp3.1\TestjsServer.pdb
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 10. CRUD RESAPI\TestjsServer\TestjsServer\obj\Debug\netcoreapp3.1\TestjsServer.genruntimeconfig.cache
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\appsettings.json
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\TestjsServer.exe
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\TestjsServer.deps.json
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\TestjsServer.runtimeconfig.json
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\TestjsServer.runtimeconfig.dev.json
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\TestjsServer.dll
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\TestjsServer.pdb
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\Microsoft.Data.Sqlite.dll
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Sqlite.dll
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\SQLitePCLRaw.core.dll
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\runtimes\alpine-x64\native\libe_sqlite3.so
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\runtimes\linux-arm\native\libe_sqlite3.so
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\runtimes\linux-arm64\native\libe_sqlite3.so
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\runtimes\linux-armel\native\libe_sqlite3.so
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\runtimes\linux-musl-x64\native\libe_sqlite3.so
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libe_sqlite3.so
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\runtimes\linux-x86\native\libe_sqlite3.so
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\libe_sqlite3.dylib
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\e_sqlite3.dll
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\obj\Debug\netcoreapp3.1\TestjsServer.csprojAssemblyReference.cache
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\obj\Debug\netcoreapp3.1\TestjsServer.AssemblyInfoInputs.cache
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\obj\Debug\netcoreapp3.1\TestjsServer.AssemblyInfo.cs
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\obj\Debug\netcoreapp3.1\TestjsServer.csproj.CoreCompileInputs.cache
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\obj\Debug\netcoreapp3.1\TestjsServer.MvcApplicationPartsAssemblyInfo.cache
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\obj\Debug\netcoreapp3.1\TestjsServer.RazorTargetAssemblyInfo.cache
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\obj\Debug\netcoreapp3.1\TestjsServer.csproj.CopyComplete
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\obj\Debug\netcoreapp3.1\staticwebassets\TestjsServer.StaticWebAssets.Manifest.cache
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\obj\Debug\netcoreapp3.1\staticwebassets\TestjsServer.StaticWebAssets.xml
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\obj\Debug\netcoreapp3.1\TestjsServer.dll
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\obj\Debug\netcoreapp3.1\TestjsServer.pdb
+D:\Study\2019-2020\57. JavaScript PU816\Lesson 11. CRUD UploadFiles\TestjsServer\TestjsServer\obj\Debug\netcoreapp3.1\TestjsServer.genruntimeconfig.cache
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\appsettings.Development.json
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\appsettings.json
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\TestjsServer.exe
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\TestjsServer.deps.json
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\TestjsServer.runtimeconfig.json
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\TestjsServer.runtimeconfig.dev.json
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\TestjsServer.dll
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\TestjsServer.pdb
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\Microsoft.Data.Sqlite.dll
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Sqlite.dll
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\SQLitePCLRaw.core.dll
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\runtimes\alpine-x64\native\libe_sqlite3.so
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\runtimes\linux-arm\native\libe_sqlite3.so
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\runtimes\linux-arm64\native\libe_sqlite3.so
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\runtimes\linux-armel\native\libe_sqlite3.so
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\runtimes\linux-musl-x64\native\libe_sqlite3.so
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libe_sqlite3.so
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\runtimes\linux-x86\native\libe_sqlite3.so
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\libe_sqlite3.dylib
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\e_sqlite3.dll
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\obj\Debug\netcoreapp3.1\TestjsServer.csprojAssemblyReference.cache
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\obj\Debug\netcoreapp3.1\TestjsServer.AssemblyInfoInputs.cache
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\obj\Debug\netcoreapp3.1\TestjsServer.AssemblyInfo.cs
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\obj\Debug\netcoreapp3.1\TestjsServer.csproj.CoreCompileInputs.cache
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\obj\Debug\netcoreapp3.1\TestjsServer.MvcApplicationPartsAssemblyInfo.cache
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\obj\Debug\netcoreapp3.1\TestjsServer.RazorTargetAssemblyInfo.cache
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\obj\Debug\netcoreapp3.1\TestjsServer.csproj.CopyComplete
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\obj\Debug\netcoreapp3.1\staticwebassets\TestjsServer.StaticWebAssets.Manifest.cache
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\obj\Debug\netcoreapp3.1\staticwebassets\TestjsServer.StaticWebAssets.xml
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\obj\Debug\netcoreapp3.1\TestjsServer.dll
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\obj\Debug\netcoreapp3.1\TestjsServer.pdb
+E:\OS\domains\my-works\homeworks\12.07.2020\TestjsServer\TestjsServer\obj\Debug\netcoreapp3.1\TestjsServer.genruntimeconfig.cache
